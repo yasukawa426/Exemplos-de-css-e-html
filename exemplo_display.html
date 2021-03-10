@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        /* 
+        inline:elemento só ocupa o espaço q precisa (n da pra usar width e height)
+        block:elemento ocupa o espaço td
+        inline-block: inline, podendo usar o width e height
+        none: n é visivel, mas ainda existe na console
+        */
+        p{
+            background-color:gray;
+        }
+        
+        button{
+            background-color:greenyellow;
+        }
+        .professores{
+            /* caso o elementro for inline, width e height n afe nada */
+            width: 200px;
+            height: 200px;
+        }
+
+        .engenharia{
+            display: inline;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <!--article#cursos>(p.*2+a[href=#].*2+footer.rodape+button.botao)
+    aperta crtl+space caso n for-->
+        <p>Opçoes para adms</p>
+        <ul>
+            <li>Cadastrar novos usuarios</li>
+            <li>Remover usuarios</li>
+        </ul>
+    <article id="cursos">
+        <p class="engenharia">Engenharia</p>
+        <p class="farmacia">Farmácia</p>
+        <a href="#" class="professores">Veja a lista de professores aqui </a><a href="#" class="contato">Entre em contato</a>
+        <footer class="rodape">Universidade ApredajA</footer>
+        <button class="botao">Clique aqui para falar conosco</button>
+    </article>
+    
+
+</body>
+</html>

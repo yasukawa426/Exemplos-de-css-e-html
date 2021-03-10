@@ -1,0 +1,81 @@
+#principal p.promocao{
+    padding: 10px;
+    padding: 12px;
+    border-bottom: grey 1px solid;
+}
+
+article p{
+    /*Todo p, q é descendente de article. --> <article> <p>  </p> </article> */
+    padding: 12px;
+}
+.nova {
+  color: red;
+}
+
+article > p{
+  /* td p, filho direto de article */
+}
+
+main > article section > p.coordenadores{
+    
+}
+
+body #principal article section p.coordenadore{
+    /* p com a classe "coordenadores", descendente de um section q é descendente de article, q é descendente de um elemento q tenha um id "principal", descendente do body */
+}
+
+.curso,
+.novo-curso {
+  background-color: aliceblue;
+}
+
+.novo-curso {
+  color: red;
+}
+
+p.final-pagina#rodape {
+  border-bottom: 1px solid black;
+  background-color: #ccc;
+  padding: 12px;
+  text-align: center;
+}
+
+p.promocao {
+  text-align: center;
+  background-color: gray;
+}
+
+.promocao {
+  text-align: center;
+  background-color: red;
+}
+
+p#descricao {
+  color: black;
+  text-align: center;
+}
+
+#descricao {
+  color: red;
+}
+
+#titulo {
+  text-align: center;
+  border-bottom: 1px dashed black;
+  color: blueviolet;
+  background-color: orange;
+}
+
+h1 {
+  color: yellow;
+}
+
+p {
+  color: blue;
+  border: solid 1px black;
+}
+
+em {
+  color: black;
+  background-color: orange;
+}

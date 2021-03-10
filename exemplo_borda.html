@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Borda</title>
+    <style>
+      a {
+        /* prevalece quem estiver abaixo */
+        /* 
+            border-width: thick;
+            background-color: red;
+            border-style: solid; 
+            */
+        border: thin black solid;
+        border-top: 10px dashed blue;
+      }
+      .farmacia{
+          border-bottom: 5px solid #CCC;
+      }
+      .engenharia{
+          width: 200px;
+          height: 200px;
+          background-color: black;
+          border: 3px solid green;
+          border-radius: 150px;
+          border-top-left-radius: 5px;
+          border-radius: 20px 1px 80px 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <!--main>div#cursos>(p.*2+a[href=#]{Mais informações})-->
+      <main>
+        <div id="cursos">
+          <p class="engenharia">Engenharia</p>
+          <p class="farmacia">Farmacia</p>
+          <a href="#">Mais informações</a>
+        </div>
+      </main>
+    </main>
+  </body>
+</html>
